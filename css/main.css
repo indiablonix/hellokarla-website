@@ -1,0 +1,88 @@
+
+/***** MOBILE *****/
+
+/**** Base ****/
+
+body {
+  font-family: 'Source Code Pro', monospace;
+  font-size: 1em;
+  background: #f9f9f9;
+  color: #000000;
+  min-width: 90%;
+}
+
+
+.wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+/**** Navigation ****/
+
+header {
+  display: flex;
+  justify-content: center;
+  font-size: 2em;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul li a {
+  font-size: 1.5em;
+  color: #ed0000;
+}
+
+.menu-link {
+  margin-top: 7em;
+  color: #ed0000;
+  width: 100%;
+  padding: 0;
+  list-style: none;
+}
+
+.menu-item {
+  color: #000000;
+  background: #f9f9f9;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 10px;
+
+}
+
+li:hover {
+  color: #0000;
+  cursor: pointer;
+}
+
+.dropdown {
+  font-size: 1.5em;
+  line-height: 2em;
+  background: #f9f9f9;
+  position: absolute;
+  left: 0;
+  visibility: hidden;
+  padding: 0;
+  width: 100%;
+
+
+}
+
+ul li:hover > ul,
+ul li ul:hover {
+  visibility: visible;
+}
+
+/***** Headline *****/
+
+.intro {
+  font-family: 'Rift Soft', fantasy;
+  font-size: 3.9em;
+  text-align: center;
+
+  width: 70%;
+}
