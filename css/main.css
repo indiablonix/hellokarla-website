@@ -3,26 +3,33 @@
 
 /**** Base ****/
 
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  overflow-x: hidden; /*gets rid of gap on right of web page*/
+}
+
 body {
   font-family: 'Source Code Pro', monospace;
-  font-size: 1em;
+  font-size: 16px;
   background: #f9f9f9;
   color: #000000;
-  min-width: 90%;
 }
 
 
 .wrapper {
-  width: 100%;
-  display: flex;
-  justify-content: center;
+  max-width: 90%;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 10px;
+  padding-left: 10px;
 }
+
 
 /**** Navigation ****/
 
 header {
-  display: flex;
-  justify-content: center;
   font-size: 2em;
 }
 
@@ -33,11 +40,15 @@ a {
 ul li a {
   font-size: 1.5em;
   color: #ed0000;
+  display: flex;
+  justify-content: center;
 }
 
 .menu-link {
-  margin-top: 7em;
+  margin-top: 5em;
+  margin-bottom: 3em;
   color: #ed0000;
+  /* text-align: center; */
   width: 100%;
   padding: 0;
   list-style: none;
@@ -55,7 +66,7 @@ ul li a {
 }
 
 li:hover {
-  color: #0000;
+  color: #ed0000;
   cursor: pointer;
 }
 
@@ -68,8 +79,6 @@ li:hover {
   visibility: hidden;
   padding: 0;
   width: 100%;
-
-
 }
 
 ul li:hover > ul,
@@ -83,6 +92,71 @@ ul li ul:hover {
   font-family: 'Rift Soft', fantasy;
   font-size: 3.9em;
   text-align: center;
+  display: flex;
+  justify-content: center;
+  max-width: 70%;
+  margin: auto;
+}
 
-  width: 70%;
+/***** Work Samples *****/
+
+.image-wrapper {
+  margin: 0;
+  margin-top: 20em;
+  padding: 0;
+  display: block;
+  justify-content: center;
+  width: 100%;
+}
+
+figure {
+  margin: auto;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+figure a img {
+  max-width: 100%;
+  display: block;
+  margin: auto;
+}
+
+/***** Contact *****/
+
+.social-media ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 125px;
+}
+
+.social-media ul li a {
+  font-size: 2em;
+  color: #000000;
+}
+
+.email {
+  font-size: 2em;
+  color: #ed0000;
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
+}
+
+/***** Footer *****/
+
+footer {
+  font-size: 2em;
+  line-height: 2em;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 125px;
+  margin-bottom: 50px;
+}
+
+footer p,
+small {
+  text-align: center;
 }
