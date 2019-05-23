@@ -26,7 +26,6 @@ body {
   padding-left: 10px;
 }
 
-
 /**** Navigation ****/
 
 header {
@@ -86,41 +85,6 @@ ul li ul:hover {
   visibility: visible;
 }
 
-/***** Headline *****/
-
-.intro {
-  font-family: 'Rift Soft', fantasy;
-  font-size: 3.9em;
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  max-width: 70%;
-  margin: auto;
-}
-
-/***** Work Samples *****/
-
-.image-wrapper {
-  margin: 0;
-  margin-top: 20em;
-  padding: 0;
-  display: block;
-  justify-content: center;
-  width: 100%;
-}
-
-figure {
-  margin: auto;
-  width: 100%;
-  box-sizing: border-box;
-}
-
-figure a img {
-  max-width: 100%;
-  display: block;
-  margin: auto;
-}
-
 /***** Contact *****/
 
 .social-media ul {
@@ -159,4 +123,71 @@ footer {
 footer p,
 small {
   text-align: center;
+}
+
+/***** LANDING PAGE/WORK *****/
+
+
+/***** Headline *****/
+
+.intro {
+  font-family: 'Rift Soft', fantasy;
+  font-size: 3.9em;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  max-width: 70%;
+  margin: auto;
+}
+
+/***** Work Samples *****/
+
+.image-wrapper {
+  margin: 0;
+  margin-top: 20em;
+  padding: 0;
+  display: block;
+  justify-content: center;
+  width: 100%;
+}
+
+figure {
+  margin: auto;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+figure a img {
+  max-width: 100%;
+  display: block;
+  margin: auto;
+}
+
+/***** ABOUT PAGE *****/
+
+.about-title {
+  font-family: 'Rift Soft', fantasy;
+  font-size: 3.9em;
+  text-align: center;
+}
+
+.self-portrait {
+  display: flex;
+  justify-content: center;
+}
+
+.self-portrait img {
+  height: 800px;
+  width: 800px;
+  border: solid 3px #000000;
+}
+
+.about-info {
+  font-family: 'Anaheim', sans-serif;
+  font-size: 3em;
+  text-align: center;
+  line-height: 1.5em;
+  max-width: 90%;
+  margin: 125px auto;
+
 }
